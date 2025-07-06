@@ -1,3 +1,4 @@
+import userProfile from './assets/userProfile.jpg'
 import "./index.css";
 
 // header
@@ -7,7 +8,7 @@ function Header() {
             <div style={{ padding: "0.4rem 1.2rem 0.4rem 1.2rem" }}>
                 <section>
                     {/* user profile image */}
-                    <img id="userProfile" src="src/assets/userProfile.jpg" alt="" />
+                    <img id="userProfile" src={userProfile} alt="" />
 
                     {/* user details */}
                     <div className="user-meta">
