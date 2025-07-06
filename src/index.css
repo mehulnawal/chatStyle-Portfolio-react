@@ -1,0 +1,123 @@
+/* common css */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px;
+  background-color: #000;
+}
+
+/* header */
+.headerMain {
+  background-color: #202C33;
+  color: #fff;
+  margin: 0px !important;
+  width: 100vw;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+
+  section {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    #userProfile {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100%;
+    }
+
+    .user-meta {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: 1rem;
+
+      #userDetail {
+        margin: 0px;
+        font-size: 1.3rem;
+
+        #userName {
+          font-weight: 600;
+          margin-bottom: 0.3rem;
+        }
+
+        #sendDIv {
+          font-size: 1rem;
+          color: #ccc;
+
+          #lastSeen {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .header-icons {
+        display: flex;
+        gap: 20px;
+        font-size: 1.4rem;
+
+        i {
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+
+        i:hover {
+          transform: translateY(-4px);
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+/* mainBody */
+.mainBody {
+  background-image: url('./assets/mainBodyBg.webp');
+  /* background-size: c; */
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+/* footer */
+.footer {
+  background-color: #202C33;
+  position: fixed;
+  width: 100%;
+  bottom: 0rem;
+  left: 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  input {
+    background-color: #2A3942;
+    outline: none;
+    color: #fff;
+    border: none;
+    width: 30rem;
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.7rem;
+  }
+
+  i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
