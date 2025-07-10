@@ -7,9 +7,10 @@ function App() {
     <div>
       <Header />
       <MainBody />
-      <Footer />
+      {/* <Footer onSend={""} /> */}
     </div>
   )
 }
 
 export default App
+''

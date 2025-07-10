@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* common css */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  line-height: 22px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,7 +15,14 @@
 body {
   margin: 0px;
   background-color: #000;
+  overflow-x: hidden;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 
 /* header */
 .headerMain {
@@ -85,23 +96,63 @@ body {
   background-image: url('./assets/mainBodyBg.webp');
   /* background-size: c; */
   background-position: center;
-  height: 100vh;
+  min-height: fit-content;
+  max-height: fit-content;
   width: 100vw;
-  overflow-y: scroll;
+  color: #fff;
+  margin-top: 5rem;
+  padding: 2rem 0rem 6rem 0rem;
+
+  /* automatic message UI */
+  #mainMessageHead {
+    height: fit-content;
+    width: 40%;
+    margin-left: 2rem;
+
+    #mainMessageBody {
+      background-color: #202C33;
+      padding: 0.4rem 1rem;
+      color: #fff;
+      border-radius: 0.8rem;
+      border-bottom-right-radius: 0rem;
+
+      #name {
+        color: #DAA520;
+        transition: all 0.2s ease-in-out;
+        font-size: 1.1rem;
+
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+
+  /* user message UI */
+  #userMessage {
+    background-color: #005C4B;
+    height: fit-content;
+    /* min-width: 10%; */
+    max-width: fit-content;
+    padding: 0.4rem 1rem;
+    border-radius: 0.8rem;
+    border-bottom-left-radius: 0rem;
+    margin: 1rem 2rem 2rem auto;
+  }
 }
 
 /* footer */
 .footer {
   background-color: #202C33;
+  margin: 0px !important;
+  width: 100vw;
   position: fixed;
-  width: 100%;
   bottom: 0rem;
   left: 0rem;
-  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.2rem;
 
   input {
     background-color: #2A3942;
@@ -114,10 +165,131 @@ body {
     border-radius: 0.7rem;
   }
 
+  /* #sendIcon { */
+  /* width: fit-content; */
+  /* display: inline-block; */
+  /* cursor: not-allowed; */
+
   i {
+    /* pointer-events: none; */
+    color: #ccc;
     cursor: pointer;
-    color: #fff;
     font-size: 1.4rem;
-    cursor: pointer;
+    margin-left: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* } */
+#currentTime {
+  font-size: 0.8rem;
+  width: fit-content;
+  margin: 0px 0px 0px auto;
+  color: #94bab3;
+  font-weight: 700;
+}
+
+.keywords {
+  color: #daa520d2;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.contactReply {
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+
+  /* .col-6 {
+    width: 50%;
+  } */
+
+  .col-12 {
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    background-color: #94bab3;
+    border-radius: 1.3rem;
+    margin: 1.3rem auto;
+    padding: 0.69rem 0rem;
+    width: 65%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #linkedIn:hover,
+  #phone:hover {
+    background-color: #1469C7;
+    color: #fff;
+  }
+
+  #email:hover {
+    background-color: #B14237;
+    color: #fff;
+  }
+
+  #github:hover {
+    background-color: #32373D;
+    color: #fff;
+  }
+
+  #whatsApp:hover {
+    color: #fff;
+    background-color: #2cd46cb8;
+  }
+
+}
+
+.projectReply {
+
+  li {
+    margin-top: 1.7rem;
+  }
+
+  .projectTitle {
+    color: #00BFFF;
+  }
+
+  .projectTech {
+    color: #999999;
+  }
+
+  .linkParent {
+    display: flex;
+    gap: 1.1rem;
+
+    .liveDemoLink {
+      color: #34D399;
+    }
+
+    .githubRepo {
+      color: #A855F7;
+    }
+
+    a {
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+
+  #github {
+    background-color: #94bab3;
+    border-radius: 0.7rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.4rem;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #github:hover {
+    background-color: #32373D;
+    color: #fff;
   }
 }
