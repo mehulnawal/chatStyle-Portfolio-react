@@ -68,7 +68,7 @@ function Header({ bgValue, deleteValue }) {
                         </div>
                     </section>
                 </div>
-            </div>
+            </div >
 
             <div className={isSettings ? "settings" : "hideSetting"}  >
 

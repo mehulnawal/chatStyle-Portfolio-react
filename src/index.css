@@ -14,6 +14,8 @@
 
 body {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   background-color: #000;
   overflow-x: hidden;
 }
@@ -29,7 +31,7 @@ a {
   color: #fff;
   margin: 0px;
   height: fit-content;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0rem;
   left: 0rem;
@@ -95,8 +97,7 @@ a {
 .mainBody {
   background: url('./assets/mainBodyBg.webp');
   background-position: center;
-  min-height: fit-content;
-  max-height: fit-content;
+  height: fit-content;
   width: 100vw;
   color: #fff;
   margin-top: 5rem;
@@ -339,7 +340,7 @@ a {
   opacity: 1;
   color: #202C33;
   padding: 0rem 1.3rem;
-  transition: all 3s ease-in-out;
+  /* transition: all 3s ease-in-out; */
   z-index: 2;
 
   #title {
@@ -419,4 +420,36 @@ a {
 
 .settingsOverflow {
   overflow: hidden;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+  .settings {
+    height: 90vh !important;
+    width: 80vw !important;
+    top: 0% !important;
+  }
+
+  .footer {
+    input {
+      width: 20rem;
+    }
+  }
+
+  .mainBody {
+    padding: 2rem 0rem 6rem 0rem !important;
+
+    #mainMessageHead {
+      margin-left: 0.4rem !important;
+      width: 95% !important;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    input {
+      width: 10rem;
+    }
+  }
 }
