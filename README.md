@@ -1,12 +1,63 @@
-# React + Vite
+# 💬 React Chat Interface UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 👨‍💻 About Me
 
-Currently, two official plugins are available:
+Hi, I'm **Mehul Nawal**, a passionate frontend developer focused on building modern, interactive web applications using **React**, **JavaScript**, and animation libraries.  
+I love turning ideas into real projects that are clean, user-friendly, and responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔗 [LinkedIn](https://www.linkedin.com/in/mehul-nawal-2b1492244/)
+- 💻 [GitHub](https://github.com/mehulnawal)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 🎨 **Custom Chat Backgrounds** – Choose from solid colors or beautiful image backgrounds.
+- 💬 **Dynamic Message Handling** – Sends user input and displays different chatbot responses based on keywords.
+- 🔊 **Sound Feedback** – Play a notification tone on each message sent.
+- 🗑️ **Delete Confirmation** – Secure chat clearing with a confirmation prompt.
+- ⚙️ **Settings Panel** – Toggle chat features from a clean, modern settings menu.
+- ⌨️ **Keyboard Shortcuts** – Press `Enter` to send messages quickly.
+- 🎯 **Fully Responsive** – Works seamlessly on all devices.
+
+---
+
+## 📸 Preview
+![Preview](./public/originalPreview.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (with Hooks: `useState`, `useEffect`, `useRef`)
+- **HTML5 & CSS3**
+- **Font Awesome** (for icons)
+- **Custom Audio Integration**
+- **No backend** – Pure frontend experience
+
+---
+
+## 📁 Folder Structure
+📦 chat-interface/
+├── 📁 assets/ # Profile images, backgrounds, audio
+├── 📄 index.css # Styling
+├── 📄 App.jsx # Main logic
+├── 📄 chatComponent.jsx # All reply UI components
+├── 📄 README.md # You're reading it!
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+# 1. Clone this repository
+git clone https://github.com/your-username/chat-interface.git
+
+# 2. Navigate into the project directory
+cd chat-interface
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
+npm run dev
