@@ -104,6 +104,11 @@ export function SkillsReply() {
                 </ul>
 
                 <h4 style={{ fontWeight: "normal" }}>Always learning and improving to stay up-to-date with modern web technologies 🚀</h4>
+
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
+
                 <CurrentTime />
             </div >
         </div>
@@ -129,6 +134,9 @@ export function ResumeReply() {
                         </div>
                     </div>
                 </a>
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
                 <CurrentTime />
             </div>
         </div >
@@ -162,6 +170,9 @@ export function EducationReply() {
                         </h4>
                     </li>
                 </ol>
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
                 <CurrentTime />
             </div>
         </div>
@@ -176,6 +187,9 @@ export function AddressReply() {
                 <h3 style={{ marginBottom: "0px" }}>📍 My Address:</h3>
                 <h4 style={{ marginTop: "10px" }}>Surat, Gujarat, India</h4>
                 <h4><em>👉 Currently looking for opportunities in Surat and remote work.</em></h4>
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
                 <CurrentTime />
             </div>
         </div>
@@ -208,6 +222,9 @@ export function ContactReply() {
                 <a href=" https://wa.me/9879216262" id="whatsApp" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
                 <CurrentTime />
             </div>
         </div >
@@ -270,6 +287,9 @@ export function ProjectReply() {
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
+                <h4 style={{ fontSize: "1.1rem", fontWeight: "normal" }}>
+                    Send <em></em><strong>'more'</strong> to know more about me.
+                </h4>
                 <CurrentTime />
             </div>
         </div >
