@@ -117,7 +117,7 @@ export function ResumeReply() {
             <div id="mainMessageBody">
                 <h3>📄 My Resume:</h3>
                 <h4>You can view or download my resume:</h4>
-                <a style={{ textAlign: "center" }} href="public/Mehul Nawal Resume-2.pdf" download="Frontend Developer Mehul Nawal">
+                <a style={{ textAlign: "center" }} href="Mehul Nawal Resume-2.pdf" download="Frontend Developer Mehul Nawal">
                     <div id="resume" style={{ width: "100%" }}>
                         <img style={{ borderRadius: "0.8rem", margin: "auto", width: "60%", height: "40%" }} src={resumeSc} alt="" />
 
