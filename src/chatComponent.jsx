@@ -1,5 +1,4 @@
 // import whatsappNotificationTone from './assets/audio/whatsappNotificationTone.mp3'
-import { useEffect } from "react";
 
 // import CurrentTime form './chatComponent';
 function MainMessage() {
@@ -48,23 +47,6 @@ export function CurrentTime() {
     )
 }
 
-export function PlaySound() {
-
-    function sound() {
-        let soundEffect = new Audio('./audio/whatsappNotificationTone.mp3');
-        soundEffect.play();
-    }
-
-    useEffect(() => {
-        window.onload = sound();
-    });
-
-    return (
-        <>
-
-        </>
-    );
-}
 
 // user message
 export function UserMessageUI({ message = "" }) {
@@ -192,7 +174,7 @@ export function AddressReply() {
             <div id="mainMessageBody">
                 <h3 style={{ marginBottom: "0px" }}>📍 My Address:</h3>
                 <h4 style={{ marginTop: "10px" }}>Surat, Gujarat, India</h4>
-                <h4><em>👉 Currently looking for opportunities in Surat only.</em></h4>
+                <h4><em>👉 Currently looking for opportunities in Surat and remote work.</em></h4>
                 <CurrentTime />
             </div>
         </div>
@@ -222,7 +204,7 @@ export function ContactReply() {
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
 
-                <a href=" https://wa.me/9879216262" id="whatsApp">
+                <a href=" https://wa.me/9879216262" id="whatsApp" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 <CurrentTime />

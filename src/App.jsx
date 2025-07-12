@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <MainBody />
       {/* <Footer onSend={""} /> */}
     </div>
@@ -13,4 +13,3 @@ function App() {
 }
 
 export default App
-''

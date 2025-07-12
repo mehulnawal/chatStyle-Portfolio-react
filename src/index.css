@@ -23,12 +23,12 @@ a {
   text-decoration: none;
 }
 
-
 /* header */
 .headerMain {
   background-color: #202C33;
   color: #fff;
-  margin: 0px !important;
+  margin: 0px;
+  height: fit-content;
   width: 100vw;
   position: fixed;
   top: 0rem;
@@ -93,8 +93,7 @@ a {
 
 /* mainBody */
 .mainBody {
-  background-image: url('./assets/mainBodyBg.webp');
-  /* background-size: c; */
+  background: url('./assets/mainBodyBg.webp');
   background-position: center;
   min-height: fit-content;
   max-height: fit-content;
@@ -139,6 +138,38 @@ a {
     border-bottom-left-radius: 0rem;
     margin: 1rem 2rem 2rem auto;
   }
+}
+
+.solidColorCadetblue {
+  background: cadetblue;
+}
+
+.solidColorBurlywood {
+  background: burlywood;
+}
+
+.solidColorChocolate {
+  background: chocolate;
+}
+
+.solidColorCornflowerblue {
+  background: cornflowerblue;
+}
+
+.imageBackgroundImg0 {
+  background: url('./assets/mainBodyBg.webp');
+}
+
+.imageBackgroundImg1 {
+  background: url('./assets/imageBackgroundImage1.jpeg');
+}
+
+.imageBackgroundImg2 {
+  background: url('./assets/imageBackgroundImage2.jpeg');
+}
+
+.imageBackgroundImg3 {
+  background: url('./assets/imageBackgroundImage3.jpeg');
 }
 
 /* footer */
@@ -292,4 +323,100 @@ a {
     background-color: #32373D;
     color: #fff;
   }
+}
+
+.settings {
+  height: 80vh;
+  width: 70vw;
+  background-color: #ccc;
+  border-radius: 1.1rem;
+  position: fixed;
+  display: block;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+  color: #202C33;
+  padding: 0rem 1.3rem;
+  transition: all 3s ease-in-out;
+  z-index: 2;
+
+  #title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    i {
+      font-size: 1.6rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover i {
+      transform: scale(1.2) rotate(180deg);
+
+    }
+
+  }
+
+  #functionalityHead {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    #deleteChat,
+    #toggleTheme {
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 50%;
+
+      i {
+        font-size: 1.4rem;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover i {
+        transform: scale(1.2) translateY(-5px);
+      }
+    }
+
+  }
+
+  #chatBackground {
+    font-size: 1.1rem;
+
+    .solidColoBody {
+      display: flex;
+      justify-content: space-between;
+
+      .colorBox {
+        cursor: pointer;
+        height: 60px;
+        width: 20%;
+        background-color: #000;
+        border-radius: 0.6rem;
+        overflow: hidden;
+        border: 2px solid #CCCCCC;
+
+        &:hover {
+          border: 2px solid rebeccapurple;
+        }
+      }
+    }
+  }
+}
+
+.hideSetting {
+  transform: translateX(-50%) scale(0);
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.settingsOverflow {
+  overflow: hidden;
 }
