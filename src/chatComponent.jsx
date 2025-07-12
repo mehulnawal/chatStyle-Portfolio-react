@@ -1,4 +1,5 @@
-// import whatsappNotificationTone from './assets/audio/whatsappNotificationTone.mp3'
+import resumeSc from './assets/resumeSc.jpg'
+import pdfIcon from './assets/pdfIcon.png'
 
 // import CurrentTime form './chatComponent';
 function MainMessage() {
@@ -118,10 +119,10 @@ export function ResumeReply() {
                 <h4>You can view or download my resume:</h4>
                 <a style={{ textAlign: "center" }} href="public/Mehul Nawal Resume-2.pdf" download="Frontend Developer Mehul Nawal">
                     <div id="resume" style={{ width: "100%" }}>
-                        <img style={{ borderRadius: "0.8rem", margin: "auto", width: "60%", height: "40%" }} src="public/resumeSc.jpg" alt="" />
+                        <img style={{ borderRadius: "0.8rem", margin: "auto", width: "60%", height: "40%" }} src={resumeSc} alt="" />
 
                         <div style={{ marginTop: "-14px", display: "flex", alignItems: "center", gap: "20px", marginLeft: "3%", justifyContent: "center" }}>
-                            <img style={{ width: "30px", height: "30px" }} src="public/pdfIcon.png" alt="" />
+                            <img style={{ width: "30px", height: "30px" }} src={pdfIcon} alt="" />
                             <h4 style={{ fontSize: "1.1rem" }}>Mehul Nawal.pdf</h4>
 
                             <i style={{ fontSize: "1.4rem", cursor: "pointer" }} class="fa-solid fa-circle-down"></i>
